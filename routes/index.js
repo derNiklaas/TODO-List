@@ -6,7 +6,6 @@ let fs = require('fs');
 router.get('/', function (req, res, next) {
     let todo = fs.readFileSync('./todo.json');
     let data = JSON.parse(todo);
-    console.log(data);
 
     res.render('index', {
         title: data.title,
