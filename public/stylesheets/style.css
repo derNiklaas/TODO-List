@@ -1,0 +1,65 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+
+div.blog {
+    background-image: url("../images/TODO.png");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 676px;
+    margin-top: 20%;
+}
+
+div.hide {
+    visibility: hidden;
+    animation: slide-to-the-left 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+div.show {
+    visibility: visible;
+    animation: slide-to-the-right 750ms;
+    animation-timing-function: ease-in-out;
+}
+
+
+div.tasks {
+    bottom: 0;
+    font-size: 22px;
+    margin: 0 20px 20px 78px;
+}
+
+
+div.tasks > h1 {
+    padding-top: 23px;
+}
+
+div.tasks > p {
+    width: 500px;
+    margin-top: 55px;
+    font-size: 35px;
+}
+
+@keyframes slide-to-the-left {
+    from {
+        transform: translateX(0);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(-700px);
+    }
+}
+
+@keyframes slide-to-the-right {
+    from {
+        transform: translateX(-700px);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(0);
+
+    }
+}
