@@ -43,8 +43,8 @@ webSocketServer.on('connection', (webSocket) => {
             if (ws.readyState === webSocket.OPEN) {
                 ws.send(message);
             }
-        })
-    })
+        });
+    });
 });
 
 module.exports = app;
