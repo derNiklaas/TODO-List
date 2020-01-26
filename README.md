@@ -3,7 +3,7 @@
 ## Installation
 1. Download this [repository](https://github.com/derNiklaas/TODO-List/releases).
 2. Make sure that you [Node.JS](https://nodejs.org/) installed.
-3. Open a console and run ``npm install``
+3. Open a console and run ``npm install``.
 4. Yaaay. \o/
 
 ## Usage
