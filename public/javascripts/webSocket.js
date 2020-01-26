@@ -14,19 +14,35 @@ webSocket.addEventListener('message', (message) => {
             break;
         }
         case "toggleTaskOne": {
-            document.getElementsByClassName('taskOne')[0].classList.add('')
+            if (document.getElementsByClassName('taskOne')[0].classList.contains('finished')) {
+                document.getElementsByClassName('taskOne')[0].classList.remove('finished');
+            } else {
+                document.getElementsByClassName('taskOne')[0].classList.add('finished');
+            }
             break;
         }
         case "toggleTaskTwo": {
-
+            if (document.getElementsByClassName('taskTwo')[0].classList.contains('finished')) {
+                document.getElementsByClassName('taskTwo')[0].classList.remove('finished');
+            } else {
+                document.getElementsByClassName('taskTwo')[0].classList.add('finished');
+            }
             break;
         }
         case "toggleTaskThree": {
-
+            if (document.getElementsByClassName('taskThree')[0].classList.contains('finished')) {
+                document.getElementsByClassName('taskThree')[0].classList.remove('finished');
+            } else {
+                document.getElementsByClassName('taskThree')[0].classList.add('finished');
+            }
             break;
         }
         case "toggleTaskFour": {
-
+            if (document.getElementsByClassName('taskFour')[0].classList.contains('finished')) {
+                document.getElementsByClassName('taskFour')[0].classList.remove('finished');
+            } else {
+                document.getElementsByClassName('taskFour')[0].classList.add('finished');
+            }
             break;
         }
     }

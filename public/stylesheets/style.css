@@ -39,8 +39,13 @@ div.tasks > h1 {
 
 div.tasks > p {
     width: 500px;
-    margin-top: 55px;
     font-size: 35px;
+}
+
+div.tasks > p.finished {
+    text-decoration-color: red;
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
 }
 
 @keyframes slide-to-the-left {
