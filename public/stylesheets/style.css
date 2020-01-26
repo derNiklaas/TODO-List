@@ -38,8 +38,9 @@ div.tasks > h1 {
 }
 
 div.tasks > p {
-    width: 500px;
+    width: 360px;
     font-size: 35px;
+    word-wrap: break-word;
 }
 
 div.tasks > p.finished {
