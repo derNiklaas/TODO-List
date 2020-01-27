@@ -26,6 +26,8 @@ To send a message just send a POST request to ``localhost:9999/api?function=[fun
 * ``toggleTaskTwo`` Toggle task two.
 * ``toggleTaskThree`` Toggle task three.
 * ``toggleTaskFour`` Toggle task four.
+* ``reload`` Reloads the frontend (toggled tasked will be lost during a reload).
+* ``stop`` Stops both servers.
 
 # Credits
 * [Sireisenblut](https://www.youtube.com/channel/UCLVdGYbBIjozAaOTZEV4K2A) for the background image.

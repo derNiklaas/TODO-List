@@ -46,6 +46,10 @@ webSocketServer.on('connection', (webSocket) => {
                 ws.send(message);
             }
         });
+        if (message === "stop") {
+            webSocketServer.close();
+            process.exit(0);
+        }
     });
 });
 

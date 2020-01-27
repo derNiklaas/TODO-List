@@ -45,5 +45,13 @@ webSocket.addEventListener('message', (message) => {
             }
             break;
         }
+        case "reload": {
+            location.reload();
+            break;
+        }
+        case "stop": {
+            webSocket.close();
+            break;
+        }
     }
 });
