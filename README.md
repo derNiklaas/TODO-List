@@ -11,7 +11,7 @@
 2. Change your Todo list entries in the ``todo.json`` file.
 3. Create a browser source in OBS with the following URL: ``http://localhost:9999/``. 
 
-**You can now use some AHK scripts to send messages to the WebSocketServer running on port 10000.**
+**You can now use POST requests to the server. See Socket Messages for more information.**
 
 ### Ports
 The Todo list uses the following ports: 
