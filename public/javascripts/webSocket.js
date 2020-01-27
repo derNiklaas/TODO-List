@@ -4,44 +4,44 @@ webSocket.addEventListener('message', (message) => {
     console.log(message.data);
     switch (message.data) {
         case "hide": {
-            document.getElementsByClassName('blog')[0].classList.add('hide');
-            document.getElementsByClassName('blog')[0].classList.remove('show');
+            document.getElementById('blog').classList.add('hide');
+            document.getElementById('blog').classList.remove('show');
             break;
         }
         case "show": {
-            document.getElementsByClassName('blog')[0].classList.remove('hide');
-            document.getElementsByClassName('blog')[0].classList.add('show');
+            document.getElementById('blog').classList.remove('hide');
+            document.getElementById('blog').classList.add('show');
             break;
         }
         case "toggleTaskOne": {
-            if (document.getElementsByClassName('taskOne')[0].classList.contains('finished')) {
-                document.getElementsByClassName('taskOne')[0].classList.remove('finished');
+            if (document.getElementById('taskOne').classList.contains('finished')) {
+                document.getElementById('taskOne').classList.remove('finished');
             } else {
-                document.getElementsByClassName('taskOne')[0].classList.add('finished');
+                document.getElementById('taskOne').classList.add('finished');
             }
             break;
         }
         case "toggleTaskTwo": {
-            if (document.getElementsByClassName('taskTwo')[0].classList.contains('finished')) {
-                document.getElementsByClassName('taskTwo')[0].classList.remove('finished');
+            if (document.getElementById('taskTwo').classList.contains('finished')) {
+                document.getElementById('taskTwo').classList.remove('finished');
             } else {
-                document.getElementsByClassName('taskTwo')[0].classList.add('finished');
+                document.getElementById('taskTwo').classList.add('finished');
             }
             break;
         }
         case "toggleTaskThree": {
-            if (document.getElementsByClassName('taskThree')[0].classList.contains('finished')) {
-                document.getElementsByClassName('taskThree')[0].classList.remove('finished');
+            if (document.getElementById('taskThree').classList.contains('finished')) {
+                document.getElementById('taskThree').classList.remove('finished');
             } else {
-                document.getElementsByClassName('taskThree')[0].classList.add('finished');
+                document.getElementById('taskThree').classList.add('finished');
             }
             break;
         }
         case "toggleTaskFour": {
-            if (document.getElementsByClassName('taskFour')[0].classList.contains('finished')) {
-                document.getElementsByClassName('taskFour')[0].classList.remove('finished');
+            if (document.getElementById('taskFour').classList.contains('finished')) {
+                document.getElementById('taskFour').classList.remove('finished');
             } else {
-                document.getElementsByClassName('taskFour')[0].classList.add('finished');
+                document.getElementById('taskFour').classList.add('finished');
             }
             break;
         }

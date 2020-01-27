@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  script(src="../javascripts/webSocket.js")
-  div.blog
-    div.tasks
-      h1 #{title}
-      p.taskOne #{task1}
-      p.taskTwo #{task2}
-      p.taskThree #{task3}
-      p.taskFour #{task4}
+    script(src="../javascripts/webSocket.js")
+    div(id="blog")
+        div(id="tasks")
+            h1 #{title}
+            p(id="taskOne") #{task1}
+            p(id="taskTwo") #{task2}
+            p(id="taskThree") #{task3}
+            p(id="taskFour") #{task4}
