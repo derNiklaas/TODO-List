@@ -20,14 +20,17 @@ The Todo list uses the following ports:
 
 ### Socket Messages
 To send a message just send a POST request to ``localhost:9999/api?function=[function]``. The following functions are allowed: 
-* ``show`` Show the todo list.
-* ``hide`` Hide the todo list.
-* ``toggleTaskOne`` Toggle task one.
-* ``toggleTaskTwo`` Toggle task two.
-* ``toggleTaskThree`` Toggle task three.
-* ``toggleTaskFour`` Toggle task four.
-* ``reload`` Reloads the frontend (toggled tasked will be lost during a reload).
-* ``stop`` Stops both servers.
+
+| Function        | Description           |
+| --------------- | :-------------------: |
+| show            | Show the todo list.   |
+| hide            | Hide the todo list.   |
+| reload          | Reload the todo list. |
+| stop            | Stop the program.     |
+| toggleTaskOne   | Toggle task one.      |
+| toggleTaskTwo   | Toggle task two.      |
+| toggleTaskThree | Toggle task three.    |
+| toggleTaskFour  | Toggle task four.     |
 
 # Credits
 * [Sireisenblut](https://www.youtube.com/channel/UCLVdGYbBIjozAaOTZEV4K2A) for the background image.
