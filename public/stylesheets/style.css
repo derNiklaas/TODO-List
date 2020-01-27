@@ -25,13 +25,11 @@ div.show {
     animation-timing-function: ease-in-out;
 }
 
-
 div.tasks {
     bottom: 0;
     font-size: 22px;
     margin: 0 20px 20px 78px;
 }
-
 
 div.tasks > h1 {
     padding-top: 23px;
