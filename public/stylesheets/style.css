@@ -15,13 +15,13 @@ div#blog {
 
 div.hide {
     visibility: hidden;
-    animation: slide-to-the-left 750ms;
+    animation: slide-to-the-right 750ms;
     animation-timing-function: ease-in-out;
 }
 
 div.show {
     visibility: visible;
-    animation: slide-to-the-right 750ms;
+    animation: slide-to-the-left 750ms;
     animation-timing-function: ease-in-out;
 }
 
@@ -47,7 +47,7 @@ div#tasks > p.finished {
     text-decoration-style: wavy;
 }
 
-@keyframes slide-to-the-left {
+@keyframes slide-to-the-right {
     from {
         transform: translateX(0);
         visibility: visible;
@@ -57,7 +57,7 @@ div#tasks > p.finished {
     }
 }
 
-@keyframes slide-to-the-right {
+@keyframes slide-to-the-left {
     from {
         transform: translateX(-700px);
         visibility: visible;
