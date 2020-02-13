@@ -16,7 +16,7 @@
 ### Ports
 The Todo list uses the following ports: 
 * 9999 for the display. (can be changed in ``./bin/www.js``)
-* 10000 for the sockets. (can be changed in ``./public/javascripts/webSocket.js``, ``./routes/api.js`` and ``app.js``)
+* 10000 for the sockets. (can be changed in ``./public/javascripts/webSocket.js``, ``./routes/send.js`` and ``app.js``)
 
 ### Socket Messages
 To send a message just send a request to ``localhost:9999/send?function=[function]``. The following functions are allowed: 

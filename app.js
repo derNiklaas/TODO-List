@@ -5,7 +5,7 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 let webSocket = require('ws');
 let indexRouter = require('./routes/index');
-let apiRouter = require('./routes/api');
+let apiRouter = require('./routes/send');
 
 let app = express();
 
