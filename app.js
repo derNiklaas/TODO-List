@@ -6,6 +6,7 @@ let logger = require('morgan');
 let webSocket = require('ws');
 let indexRouter = require('./routes/index');
 let apiRouter = require('./routes/send');
+let interfaceRouter = require('./routes/interface');
 
 let app = express();
 
@@ -21,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/', apiRouter);
+app.use('/', interfaceRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

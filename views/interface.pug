@@ -1,0 +1,23 @@
+extends layout
+
+block header
+    link(rel='stylesheet', href='/stylesheets/interface.css')
+
+block content
+    script(src="../javascripts/interface.js")
+    div(class="panel" id="panelMisc")
+        h3 Misc stuff?
+        button(id="reloadButton" type="button" onclick="press('toggleVisibility')") Toggle visibility
+        br
+        button(type="button" onclick="press('reload')") Reload todo list
+        br
+        button(id="stop" type="button" onclick="press('stop')") Stop the program
+    div(class="panel" id="panelTasks")
+        h3 Toggle Lines
+        button(id="taskOne" type="button" onclick="press('toggleTaskOne')") Toggle #{task1}
+        br
+        button(id="taskTwo" type="button" onclick="press('toggleTaskTwo')") Toggle #{task2}
+        br
+        button(id="taskThree" type="button" onclick="press('toggleTaskThree')") Toggle #{task3}
+        br
+        button(id="taskFour" type="button" onclick="press('toggleTaskFour')") Toggle #{task4}
