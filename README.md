@@ -11,12 +11,15 @@
 2. Change your Todo list entries in the ``todo.json`` file.
 3. Create a browser source in OBS with the following URL: ``http://localhost:9999/``. 
 
-**You can now use POST requests to the server. See Socket Messages for more information.**
+**You can now use POST requests to the server. See "Socket Messages" for more information.
+Alternatively you can open the web interface: ``http://localhost:9999/interface``.**
+
+If you want to use an [Auto Hotkey](https://www.autohotkey.com/) script, gewi made a script which can be found [here](http://ix.io/2dM3/AHK).
 
 ### Ports
 The Todo list uses the following ports: 
 * 9999 for the display. (can be changed in ``./bin/www.js``)
-* 10000 for the sockets. (can be changed in ``./public/javascripts/webSocket.js``, ``./routes/send.js`` and ``app.js``)
+* 10000 for the sockets. (can be changed in ``./public/javascripts/webSocket.js``, ``./public/javascripts/interface.js``, ``./routes/send.js`` and ``app.js``)
 
 ### Socket Messages
 To send a message just send a request to ``localhost:9999/send?function=[function]``. The following functions are allowed: 
@@ -34,3 +37,4 @@ To send a message just send a request to ``localhost:9999/send?function=[functio
 
 # Credits
 * [Sireisenblut](https://www.youtube.com/channel/UCLVdGYbBIjozAaOTZEV4K2A) for the background image.
+* gewi for making an Auto Hotkey Script.
