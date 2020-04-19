@@ -14,34 +14,42 @@ webSocket.addEventListener('message', (message) => {
             break;
         }
         case "toggleTaskOne": {
-            if (document.getElementById('taskOne').classList.contains('finished')) {
-                document.getElementById('taskOne').classList.remove('finished');
+            if (document.getElementById('taskOneStrikethrough').classList.contains('strike')) {
+                document.getElementById('taskOneStrikethrough').classList.remove('strike');
+                document.getElementById('taskOneNormal').classList.remove('strike');
             } else {
-                document.getElementById('taskOne').classList.add('finished');
+                document.getElementById('taskOneStrikethrough').classList.add('strike');
+                document.getElementById('taskOneNormal').classList.add('strike');
             }
             break;
         }
         case "toggleTaskTwo": {
-            if (document.getElementById('taskTwo').classList.contains('finished')) {
-                document.getElementById('taskTwo').classList.remove('finished');
+            if (document.getElementById('taskTwoStrikethrough').classList.contains('strike')) {
+                document.getElementById('taskTwoStrikethrough').classList.remove('strike');
+                document.getElementById('taskTwoNormal').classList.remove('strike');
             } else {
-                document.getElementById('taskTwo').classList.add('finished');
+                document.getElementById('taskTwoStrikethrough').classList.add('strike');
+                document.getElementById('taskTwoNormal').classList.add('strike');
             }
             break;
         }
         case "toggleTaskThree": {
-            if (document.getElementById('taskThree').classList.contains('finished')) {
-                document.getElementById('taskThree').classList.remove('finished');
+            if (document.getElementById('taskThreeStrikethrough').classList.contains('strike')) {
+                document.getElementById('taskThreeStrikethrough').classList.remove('strike');
+                document.getElementById('taskThreeNormal').classList.remove('strike');
             } else {
-                document.getElementById('taskThree').classList.add('finished');
+                document.getElementById('taskThreeStrikethrough').classList.add('strike');
+                document.getElementById('taskThreeNormal').classList.add('strike');
             }
             break;
         }
         case "toggleTaskFour": {
-            if (document.getElementById('taskFour').classList.contains('finished')) {
-                document.getElementById('taskFour').classList.remove('finished');
+            if (document.getElementById('taskFourStrikethrough').classList.contains('strike')) {
+                document.getElementById('taskFourStrikethrough').classList.remove('strike');
+                document.getElementById('taskFourNormal').classList.remove('strike');
             } else {
-                document.getElementById('taskFour').classList.add('finished');
+                document.getElementById('taskFourStrikethrough').classList.add('strike');
+                document.getElementById('taskFourNormal').classList.add('strike');
             }
             break;
         }
