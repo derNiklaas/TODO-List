@@ -35,16 +35,40 @@ div#tasks > h1 {
     padding-top: 23px;
 }
 
-div#tasks > p {
+div#tasksNoTitle {
+    overflow: hidden;
+}
+
+div#tasksNoTitle > div.task {
+    position: relative;
+}
+
+div#tasksNoTitle > div.task > p {
     width: 360px;
     font-size: 35px;
     word-wrap: break-word;
 }
 
-div#tasks > p.finished {
-    text-decoration-color: red;
+div#tasksNoTitle > div.task > p.strike {
+    color: #00000000;
+    text-decoration-color: #00000000;
     text-decoration-line: line-through;
     text-decoration-style: wavy;
+    position: absolute;
+    left: 0;
+    top: -35px;
+}
+
+div#tasksNoTitle > div.finished > p.strike {
+    animation: task-to-the-left 750ms;
+    animation-timing-function: ease-in-out;
+    text-decoration-color: red;
+}
+
+div#tasksNoTitle > div.unfinished > p.strike {
+    animation: task-to-the-right 750ms;
+    animation-timing-function: ease-in-out;
+    text-decoration-color: #00000000;
 }
 
 @keyframes slide-to-the-right {
@@ -61,6 +85,26 @@ div#tasks > p.finished {
     from {
         transform: translateX(-700px);
         visibility: visible;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes task-to-the-right {
+    from {
+        transform: translateX(0);
+        text-decoration-color: red;
+    }
+    to {
+        transform: translateX(-700px);
+    }
+}
+
+@keyframes task-to-the-left {
+    from {
+        transform: translateX(-700px);
+        text-decoration-color: red;
     }
     to {
         transform: translateX(0);

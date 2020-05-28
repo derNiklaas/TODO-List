@@ -8,7 +8,16 @@ block content
     div(id="blog")
         div(id="tasks")
             h1 #{title}
-            p(id="taskOne") #{task1}
-            p(id="taskTwo") #{task2}
-            p(id="taskThree") #{task3}
-            p(id="taskFour") #{task4}
+            div(id="tasksNoTitle")
+                div(id="taskOne" class="task")
+                    p(id="taskOneText") #{task1}
+                    p(id="taskOneStrike" class="strike") #{task1}
+                div(id="taskTwo" class="task")
+                    p(id="taskTwoText") #{task2}
+                    p(id="taskTwoStrike" class="strike") #{task2}
+                div(id="taskThree" class="task")
+                    p(id="taskThreeText") #{task3}
+                    p(id="taskThreeStrike" class="strike") #{task3}
+                div(id="taskFour" class="task")
+                    p(id="taskFourText") #{task4}
+                    p(id="taskFourStrike" class="strike") #{task4}
