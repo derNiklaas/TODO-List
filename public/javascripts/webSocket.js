@@ -62,4 +62,21 @@ webSocket.addEventListener('message', (message) => {
             break;
         }
     }
+    if (message.data.startsWith("settaskOne-")) {
+        let data = message.data.substring(11, message.data.length)
+        document.getElementById('taskOneText').textContent = data
+        document.getElementById('taskOneStrike').textContent = data
+    } else if (message.data.startsWith("settaskTwo-")) {
+        let data = message.data.substring(11, message.data.length)
+        document.getElementById('taskTwoText').textContent = data
+        document.getElementById('taskTwoStrike').textContent = data
+    } else if (message.data.startsWith("settaskThree-")) {
+        let data = message.data.substring(13, message.data.length)
+        document.getElementById('taskThreeText').textContent = data
+        document.getElementById('taskThreeStrike').textContent = data
+    } else if (message.data.startsWith("settaskFour-")) {
+        let data = message.data.substring(12, message.data.length)
+        document.getElementById('taskFourText').textContent = data
+        document.getElementById('taskFourStrike').textContent = data
+    }
 });

@@ -17,6 +17,17 @@ h3 {
     margin: 5px;
 }
 
+.panel > input {
+    margin: 4px 5px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 27px;
+    border: none;
+}
+
 .panel > button {
     margin: 4px 5px;
     background-color: #35d459;

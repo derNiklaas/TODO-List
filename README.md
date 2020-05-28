@@ -24,16 +24,20 @@ The Todo list uses the following ports:
 ### Socket Messages
 To send a message just send a request to ``localhost:9999/send?function=[function]``. The following functions are allowed: 
 
-| Function        | Description           |
-| --------------- | :-------------------: |
-| show            | Show the todo list.   |
-| hide            | Hide the todo list.   |
-| reload          | Reload the todo list. |
-| stop            | Stop the program.     |
-| toggleTaskOne   | Toggle task one.      |
-| toggleTaskTwo   | Toggle task two.      |
-| toggleTaskThree | Toggle task three.    |
-| toggleTaskFour  | Toggle task four.     |
+| Function         | Description                                                                   |
+| ---------------- | :---------------------------------------------------------------------------: |
+| show             | Show the todo list.                                                           |
+| hide             | Hide the todo list.                                                           |
+| reload           | Reload the todo list.                                                         |
+| stop             | Stop the program.                                                             |
+| toggleTaskOne    | Toggle task one.                                                              |
+| toggleTaskTwo    | Toggle task two.                                                              |
+| toggleTaskThree  | Toggle task three.                                                            |
+| toggleTaskFour   | Toggle task four.                                                             |
+| settaskOne-...   | Change the value for task one. The text after the `-` is the new task text.   |
+| settaskTwo-...   | Change the value for task two. The text after the `-` is the new task text.   |
+| settaskThree-... | Change the value for task three. The text after the `-` is the new task text. |
+| settaskFour-...  | Change the value for task four. The text after the `-` is the new task text.  |
 
 # Credits
 * [Sireisenblut](https://www.youtube.com/channel/UCLVdGYbBIjozAaOTZEV4K2A) for the background image.
