@@ -53,3 +53,13 @@ function toggleButton(button) {
         element.classList.add("toggled");
     }
 }
+
+function setTo(button) {
+    console.log("called")
+    let textElement = document.getElementById("textInput");
+    let data = textElement.value
+    console.log(data)
+    let element = document.getElementById(button);
+    element.textContent = "Toggle " + data
+    webSocket.send("set"  + button + "-" + data);
+}

@@ -1,0 +1,14 @@
+"curl localhost:9999/send?function=toggleTaskOne"
+KP_1
+"curl localhost:9999/send?function=toggleTaskTwo"
+KP_2
+"curl localhost:9999/send?function=toggleTaskThree"
+KP_3
+"curl localhost:9999/send?function=toggleTaskFour"
+KP_4
+"curl localhost:9999/send?function=reload"
+KP_0
+"curl localhost:9999/send?function=show"
+KP_5
+"curl localhost:9999/send?function=hide"
+KP_6

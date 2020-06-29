@@ -21,3 +21,11 @@ block content
         button(id="taskThree" type="button" onclick="press('toggleTaskThree')") Toggle #{task3}
         br
         button(id="taskFour" type="button" onclick="press('toggleTaskFour')") Toggle #{task4}
+    div(class="panel" id="panelChange")
+        h3 Change Lines
+        input(id="textInput" type="text")
+        br
+        button(id="setToTaskOne" type="button" onclick="setTo('taskOne')") Set to 1
+        button(id="setToTaskTwo" type="button" onclick="setTo('taskTwo')") Set to 2
+        button(id="setToTaskThree" type="button" onclick="setTo('taskThree')") Set to 3
+        button(id="setToTaskFour" type="button" onclick="setTo('taskFour')") Set to 4

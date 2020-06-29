@@ -7,6 +7,7 @@ let webSocket = require('ws');
 let indexRouter = require('./routes/index');
 let apiRouter = require('./routes/send');
 let interfaceRouter = require('./routes/interface');
+let fs = require('fs');
 
 let app = express();
 
@@ -48,7 +49,31 @@ webSocketServer.on('connection', (webSocket) => {
                 ws.send(message);
             }
         });
-        if (message === "stop") {
+        if (message.startsWith("settaskOne-")) {
+            let data = message.substring(11, message.length)
+            let todo = fs.readFileSync('./todo.json');
+            let json = JSON.parse(todo);
+            json.task1 = data
+            fs.writeFileSync('./todo.json', JSON.stringify(json, null, 2))
+        } else if (message.startsWith("settaskTwo-")) {
+            let data = message.substring(11, message.length)
+            let todo = fs.readFileSync('./todo.json');
+            let json = JSON.parse(todo);
+            json.task2 = data
+            fs.writeFileSync('./todo.json', JSON.stringify(json, null, 2))
+        } else if (message.startsWith("settaskThree-")) {
+            let data = message.substring(13, message.length)
+            let todo = fs.readFileSync('./todo.json');
+            let json = JSON.parse(todo);
+            json.task3 = data
+            fs.writeFileSync('./todo.json', JSON.stringify(json, null, 2))
+        } else if (message.startsWith("settaskFour-")) {
+            let data = message.substring(12, message.length)
+            let todo = fs.readFileSync('./todo.json');
+            let json = JSON.parse(todo);
+            json.task4 = data
+            fs.writeFileSync('./todo.json', JSON.stringify(json, null, 2))
+        } else if (message === "stop") {
             webSocketServer.close();
             process.exit(0);
         }
