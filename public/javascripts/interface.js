@@ -1,4 +1,5 @@
-const webSocket = new WebSocket('ws://localhost:10000');
+const loc = window.document.location.hostname;
+const webSocket = new WebSocket(`ws://${loc}:10000`);
 let visibilityState = true;
 
 function press(sender) {
@@ -55,11 +56,10 @@ function toggleButton(button) {
 }
 
 function setTo(button) {
-    console.log("called")
     let textElement = document.getElementById("textInput");
     let data = textElement.value
     console.log(data)
     let element = document.getElementById(button);
     element.textContent = "Toggle " + data
-    webSocket.send("set"  + button + "-" + data);
+    webSocket.send("set" + button + "-" + data);
 }

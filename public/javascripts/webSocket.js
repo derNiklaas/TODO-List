@@ -1,4 +1,5 @@
-const webSocket = new WebSocket('ws://localhost:10000');
+const loc = window.document.location.hostname;
+const webSocket = new WebSocket(`ws://${loc}:10000`);
 
 webSocket.addEventListener('message', (message) => {
     console.log(message.data);
